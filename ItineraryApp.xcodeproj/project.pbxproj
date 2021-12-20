@@ -12,6 +12,7 @@
 		F4FDEE9A27702DC00047AAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4FDEE9927702DC00047AAF8 /* Assets.xcassets */; };
 		F4FDEEA727702E530047AAF8 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDEEA627702E530047AAF8 /* TripModel.swift */; };
 		F4FDEEA927702E5E0047AAF8 /* TripFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDEEA827702E5E0047AAF8 /* TripFunction.swift */; };
+		F4FDEEAB27702FD40047AAF8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDEEAA27702FD40047AAF8 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F4FDEE9E27702DC00047AAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4FDEEA627702E530047AAF8 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		F4FDEEA827702E5E0047AAF8 /* TripFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunction.swift; sourceTree = "<group>"; };
+		F4FDEEAA27702FD40047AAF8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		F4FDEEA427702E320047AAF8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F4FDEEAA27702FD40047AAF8 /* Data.swift */,
 				F4FDEEA527702E400047AAF8 /* Trip */,
 			);
 			path = Model;
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4FDEE9127702DBE0047AAF8 /* AppDelegate.swift in Sources */,
+				F4FDEEAB27702FD40047AAF8 /* Data.swift in Sources */,
 				F4FDEE9327702DBE0047AAF8 /* SceneDelegate.swift in Sources */,
 				F4FDEEA927702E5E0047AAF8 /* TripFunction.swift in Sources */,
 				F4FDEEA727702E530047AAF8 /* TripModel.swift in Sources */,
