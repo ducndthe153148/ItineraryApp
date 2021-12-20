@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,13 +15,77 @@
                     <view key="view" contentMode="scaleToFill" id="eKm-CU-b3r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhU-LU-mMM" customClass="PopupUIView" customModule="ItineraryApp" customModuleProvider="target">
+                                <rect key="frame" x="20.5" y="54" width="373" height="149.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSV-F0-w18">
+                                        <rect key="frame" x="8" y="8" width="61" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIK-na-w4D">
+                                        <rect key="frame" x="9.5" y="49" width="354" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCI-m8-Y3k" customClass="AppUIButton" customModule="ItineraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="9.5" y="108.5" width="55.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                        <connections>
+                                            <action selector="save:" destination="dni-m2-VIu" eventType="touchUpInside" id="583-o4-4Zt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-6Q-gGD" customClass="AppUIButton" customModule="ItineraryApp" customModuleProvider="target">
+                                        <rect key="frame" x="295" y="108.5" width="68.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="dni-m2-VIu" eventType="touchUpInside" id="DxE-ii-y2d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="LNT-6Q-gGD" firstAttribute="bottom" secondItem="yCI-m8-Y3k" secondAttribute="bottom" id="7ij-R9-Tfb"/>
+                                    <constraint firstItem="nIK-na-w4D" firstAttribute="height" secondItem="yhU-LU-mMM" secondAttribute="height" multiplier="0.2" id="92A-LK-Ih0"/>
+                                    <constraint firstAttribute="bottom" secondItem="yCI-m8-Y3k" secondAttribute="bottom" constant="10" id="G3a-Zy-cpr"/>
+                                    <constraint firstItem="nIK-na-w4D" firstAttribute="centerX" secondItem="yhU-LU-mMM" secondAttribute="centerX" id="LvC-PN-rJ3"/>
+                                    <constraint firstItem="nIK-na-w4D" firstAttribute="width" secondItem="yhU-LU-mMM" secondAttribute="width" multiplier="0.95" id="XXC-u6-628"/>
+                                    <constraint firstItem="nIK-na-w4D" firstAttribute="top" secondItem="wSV-F0-w18" secondAttribute="bottom" constant="20" id="a64-Jd-BoX"/>
+                                    <constraint firstItem="wSV-F0-w18" firstAttribute="leading" secondItem="yhU-LU-mMM" secondAttribute="leading" constant="8" id="bFd-Qe-s03"/>
+                                    <constraint firstItem="wSV-F0-w18" firstAttribute="top" secondItem="yhU-LU-mMM" secondAttribute="top" constant="8" id="lgE-a3-6ry"/>
+                                    <constraint firstItem="LNT-6Q-gGD" firstAttribute="trailing" secondItem="nIK-na-w4D" secondAttribute="trailing" id="lh4-eC-neh"/>
+                                    <constraint firstItem="yCI-m8-Y3k" firstAttribute="leading" secondItem="nIK-na-w4D" secondAttribute="leading" id="wSQ-hW-AZL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="A7E-QR-6x1"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.40436330782312924" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.40008503401360546" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yhU-LU-mMM" firstAttribute="width" secondItem="eKm-CU-b3r" secondAttribute="width" multiplier="9/10" id="2XQ-xC-qFo"/>
+                            <constraint firstItem="yhU-LU-mMM" firstAttribute="height" secondItem="eKm-CU-b3r" secondAttribute="height" multiplier="1/6" id="3ml-A7-Pvi"/>
+                            <constraint firstItem="yhU-LU-mMM" firstAttribute="centerX" secondItem="eKm-CU-b3r" secondAttribute="centerX" id="8Fg-v8-rqX"/>
+                            <constraint firstItem="yhU-LU-mMM" firstAttribute="top" secondItem="A7E-QR-6x1" secondAttribute="top" constant="10" id="qto-mn-eWE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="LNT-6Q-gGD" id="rYI-xA-beY"/>
+                        <outlet property="saveButton" destination="yCI-m8-Y3k" id="TEq-hj-DPA"/>
+                        <outlet property="titleLabel" destination="wSV-F0-w18" id="L0f-YG-iea"/>
+                        <outlet property="tripTextField" destination="nIK-na-w4D" id="atB-Bb-J8t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XkT-cg-fzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="115"/>
+            <point key="canvasLocation" x="892.75362318840587" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

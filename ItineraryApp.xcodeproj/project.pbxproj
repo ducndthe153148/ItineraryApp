@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F42FA6F4277078EF000CD6B3 /* PopupUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42FA6F3277078EF000CD6B3 /* PopupUIView.swift */; };
+		F42FA6F627707AD3000CD6B3 /* AppUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42FA6F527707AD3000CD6B3 /* AppUIButton.swift */; };
 		F43B87CD2770595100FD975A /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B87CC2770595100FD975A /* TripTableViewCell.swift */; };
 		F43B87D02770603800FD975A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B87CF2770603800FD975A /* UIViewExtensions.swift */; };
 		F43B87D32770613900FD975A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B87D22770613900FD975A /* Theme.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F42FA6F3277078EF000CD6B3 /* PopupUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupUIView.swift; sourceTree = "<group>"; };
+		F42FA6F527707AD3000CD6B3 /* AppUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUIButton.swift; sourceTree = "<group>"; };
 		F43B87CC2770595100FD975A /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		F43B87CF2770603800FD975A /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		F43B87D22770613900FD975A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F42FA6F2277078C0000CD6B3 /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				F42FA6F3277078EF000CD6B3 /* PopupUIView.swift */,
+				F42FA6F527707AD3000CD6B3 /* AppUIButton.swift */,
+			);
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
 		F43B87CE2770601400FD975A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,8 @@
 		F43B87D12770612C00FD975A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F42FA6F2277078C0000CD6B3 /* CustomControl */,
+				F43B87CE2770601400FD975A /* Extensions */,
 				F43B87D4277061C500FD975A /* FugazOne-Regular.ttf */,
 				F43B87D22770613900FD975A /* Theme.swift */,
 				F43B87D62770635E00FD975A /* Colors.xcassets */,
@@ -92,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				F43B87D12770612C00FD975A /* Resource */,
-				F43B87CE2770601400FD975A /* Extensions */,
 				F4FDEEAC277037D10047AAF8 /* Views */,
 				F4FDEEA427702E320047AAF8 /* Model */,
 				F4FDEE8F27702DBE0047AAF8 /* ItineraryApp */,
@@ -230,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F43B87D32770613900FD975A /* Theme.swift in Sources */,
+				F42FA6F627707AD3000CD6B3 /* AppUIButton.swift in Sources */,
+				F42FA6F4277078EF000CD6B3 /* PopupUIView.swift in Sources */,
 				F4FDEE9127702DBE0047AAF8 /* AppDelegate.swift in Sources */,
 				F43B87CD2770595100FD975A /* TripTableViewCell.swift in Sources */,
 				F43B87D02770603800FD975A /* UIViewExtensions.swift in Sources */,

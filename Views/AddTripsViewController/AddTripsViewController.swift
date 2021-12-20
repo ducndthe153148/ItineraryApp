@@ -9,21 +9,24 @@ import UIKit
 
 class AddTripsViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var tripTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
+    
+    var doneSaving: (() -> ())?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.font = UIFont(name: Theme.mainFontName, size: 24)
+    }
 
-        // Do any additional setup after loading the view.
+    
+    @IBAction func cancel(_ sender: UIButton) {
+        dismiss(animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func save(_ sender: UIButton) {
     }
-    */
-
 }
