@@ -9,7 +9,7 @@ import Foundation
 
 class TripFunction {
     static func createTrip(tripModel: TripModel) {
-        
+        Data.tripModels.append(tripModel)
     }
     
     static func readTrip(completion: @escaping () -> ()){

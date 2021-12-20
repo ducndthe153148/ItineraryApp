@@ -70,7 +70,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
                                 <connections>
-                                    <segue destination="2g2-ml-239" kind="presentation" id="Dg0-Ti-aGM"/>
+                                    <segue destination="2g2-ml-239" kind="presentation" identifier="toAddTripSegue" id="Dg0-Ti-aGM"/>
                                 </connections>
                             </button>
                         </subviews>
