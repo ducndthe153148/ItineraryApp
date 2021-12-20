@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F43B87CD2770595100FD975A /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B87CC2770595100FD975A /* TripTableViewCell.swift */; };
+		F43B87D02770603800FD975A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B87CF2770603800FD975A /* UIViewExtensions.swift */; };
+		F43B87D32770613900FD975A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B87D22770613900FD975A /* Theme.swift */; };
+		F43B87D5277061C500FD975A /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F43B87D4277061C500FD975A /* FugazOne-Regular.ttf */; };
+		F43B87D72770635E00FD975A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43B87D62770635E00FD975A /* Colors.xcassets */; };
+		F43B87D927706AF800FD975A /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B87D827706AF800FD975A /* UIButtonExtensions.swift */; };
+		F43B87DB27706C5400FD975A /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B87DA27706C5400FD975A /* FloatingActionButton.swift */; };
+		F43B87DD27706FB800FD975A /* AddTripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43B87DC27706FB800FD975A /* AddTripsViewController.storyboard */; };
+		F43B87E027706FF500FD975A /* AddTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43B87DF27706FF500FD975A /* AddTripsViewController.swift */; };
 		F4FDEE9127702DBE0047AAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDEE9027702DBE0047AAF8 /* AppDelegate.swift */; };
 		F4FDEE9327702DBE0047AAF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDEE9227702DBE0047AAF8 /* SceneDelegate.swift */; };
 		F4FDEE9A27702DC00047AAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4FDEE9927702DC00047AAF8 /* Assets.xcassets */; };
 		F4FDEEA727702E530047AAF8 /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDEEA627702E530047AAF8 /* TripModel.swift */; };
 		F4FDEEA927702E5E0047AAF8 /* TripFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDEEA827702E5E0047AAF8 /* TripFunction.swift */; };
 		F4FDEEAB27702FD40047AAF8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDEEAA27702FD40047AAF8 /* Data.swift */; };
+		F4FDEEAF277038260047AAF8 /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4FDEEAE277038260047AAF8 /* TripsViewController.storyboard */; };
+		F4FDEEB12770383E0047AAF8 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FDEEB02770383E0047AAF8 /* TripsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F43B87CC2770595100FD975A /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		F43B87CF2770603800FD975A /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		F43B87D22770613900FD975A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F43B87D4277061C500FD975A /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
+		F43B87D62770635E00FD975A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F43B87D827706AF800FD975A /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		F43B87DA27706C5400FD975A /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
+		F43B87DC27706FB800FD975A /* AddTripsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddTripsViewController.storyboard; sourceTree = "<group>"; };
+		F43B87DF27706FF500FD975A /* AddTripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripsViewController.swift; sourceTree = "<group>"; };
 		F4FDEE8D27702DBE0047AAF8 /* ItineraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItineraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FDEE9027702DBE0047AAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4FDEE9227702DBE0047AAF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +44,8 @@
 		F4FDEEA627702E530047AAF8 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		F4FDEEA827702E5E0047AAF8 /* TripFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunction.swift; sourceTree = "<group>"; };
 		F4FDEEAA27702FD40047AAF8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F4FDEEAE277038260047AAF8 /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
+		F4FDEEB02770383E0047AAF8 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +59,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F43B87CE2770601400FD975A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F43B87CF2770603800FD975A /* UIViewExtensions.swift */,
+				F43B87D827706AF800FD975A /* UIButtonExtensions.swift */,
+				F43B87DA27706C5400FD975A /* FloatingActionButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F43B87D12770612C00FD975A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F43B87D4277061C500FD975A /* FugazOne-Regular.ttf */,
+				F43B87D22770613900FD975A /* Theme.swift */,
+				F43B87D62770635E00FD975A /* Colors.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F43B87DE27706FC600FD975A /* AddTripsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F43B87DC27706FB800FD975A /* AddTripsViewController.storyboard */,
+				F43B87DF27706FF500FD975A /* AddTripsViewController.swift */,
+			);
+			path = AddTripsViewController;
+			sourceTree = "<group>";
+		};
 		F4FDEE8427702DBE0047AAF8 = {
 			isa = PBXGroup;
 			children = (
+				F43B87D12770612C00FD975A /* Resource */,
+				F43B87CE2770601400FD975A /* Extensions */,
+				F4FDEEAC277037D10047AAF8 /* Views */,
 				F4FDEEA427702E320047AAF8 /* Model */,
 				F4FDEE8F27702DBE0047AAF8 /* ItineraryApp */,
 				F4FDEE8E27702DBE0047AAF8 /* Products */,
@@ -81,6 +135,25 @@
 				F4FDEEA827702E5E0047AAF8 /* TripFunction.swift */,
 			);
 			path = Trip;
+			sourceTree = "<group>";
+		};
+		F4FDEEAC277037D10047AAF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F43B87DE27706FC600FD975A /* AddTripsViewController */,
+				F4FDEEAD277037E20047AAF8 /* TripsViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4FDEEAD277037E20047AAF8 /* TripsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F4FDEEAE277038260047AAF8 /* TripsViewController.storyboard */,
+				F4FDEEB02770383E0047AAF8 /* TripsViewController.swift */,
+				F43B87CC2770595100FD975A /* TripTableViewCell.swift */,
+			);
+			path = TripsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +214,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43B87D5277061C500FD975A /* FugazOne-Regular.ttf in Resources */,
+				F43B87D72770635E00FD975A /* Colors.xcassets in Resources */,
+				F43B87DD27706FB800FD975A /* AddTripsViewController.storyboard in Resources */,
+				F4FDEEAF277038260047AAF8 /* TripsViewController.storyboard in Resources */,
 				F4FDEE9A27702DC00047AAF8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,10 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43B87D32770613900FD975A /* Theme.swift in Sources */,
 				F4FDEE9127702DBE0047AAF8 /* AppDelegate.swift in Sources */,
+				F43B87CD2770595100FD975A /* TripTableViewCell.swift in Sources */,
+				F43B87D02770603800FD975A /* UIViewExtensions.swift in Sources */,
 				F4FDEEAB27702FD40047AAF8 /* Data.swift in Sources */,
+				F43B87D927706AF800FD975A /* UIButtonExtensions.swift in Sources */,
 				F4FDEE9327702DBE0047AAF8 /* SceneDelegate.swift in Sources */,
+				F4FDEEB12770383E0047AAF8 /* TripsViewController.swift in Sources */,
 				F4FDEEA927702E5E0047AAF8 /* TripFunction.swift in Sources */,
+				F43B87E027706FF500FD975A /* AddTripsViewController.swift in Sources */,
+				F43B87DB27706C5400FD975A /* FloatingActionButton.swift in Sources */,
 				F4FDEEA727702E530047AAF8 /* TripModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +374,7 @@
 				INFOPLIST_FILE = ItineraryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TripsViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -318,7 +402,7 @@
 				INFOPLIST_FILE = ItineraryApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TripsViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

@@ -18,17 +18,19 @@ class TripFunction {
         // async: your app wont wait for you code to finish. it will continue on
         
         // Giúp người dùng thấy ngay UI mà không phải chờ
+        
         DispatchQueue.global(qos: .userInteractive).async {
             if Data.tripModels.count == 0 {
                 Data.tripModels.append(TripModel(title: "Trip to Bali"))
                 Data.tripModels.append(TripModel(title: "Trip to Mexico"))
                 Data.tripModels.append(TripModel(title: "Trip to VietNam"))
             }
+            
+            DispatchQueue.main.async {
+                completion()
+            }
         }
         
-        DispatchQueue.main.async {
-            completion()
-        }
     }
     
     static func updateTrip(tripModel: TripModel){
