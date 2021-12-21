@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhU-LU-mMM" customClass="PopupUIView" customModule="ItineraryApp" customModuleProvider="target">
-                                <rect key="frame" x="20.5" y="54" width="373" height="179"/>
+                                <rect key="frame" x="20.5" y="54" width="373" height="298.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U3Z-VN-o0i">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="179"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="298"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSV-F0-w18">
                                         <rect key="frame" x="8" y="8" width="61" height="21"/>
@@ -29,12 +29,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIK-na-w4D">
-                                        <rect key="frame" x="9.5" y="39" width="354" height="36"/>
+                                        <rect key="frame" x="9.5" y="39" width="354" height="59.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCI-m8-Y3k" customClass="AppUIButton" customModule="ItineraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="9.5" y="138" width="55.5" height="31"/>
+                                        <rect key="frame" x="9.5" y="257.5" width="55.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Save"/>
                                         <connections>
@@ -42,7 +42,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-6Q-gGD" customClass="AppUIButton" customModule="ItineraryApp" customModuleProvider="target">
-                                        <rect key="frame" x="295" y="138" width="68.5" height="31"/>
+                                        <rect key="frame" x="295" y="257.5" width="68.5" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
                                         <connections>
@@ -50,11 +50,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF0-4o-O9A">
-                                        <rect key="frame" x="344" y="5" width="24" height="14"/>
+                                        <rect key="frame" x="337.5" y="5" width="30.5" height="21"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain">
                                             <backgroundConfiguration key="background" image="camera" catalog="system"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addButton:" destination="dni-m2-VIu" eventType="touchUpInside" id="VCg-ld-ZxW"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -70,7 +73,9 @@
                                     <constraint firstAttribute="trailing" secondItem="U3Z-VN-o0i" secondAttribute="trailing" id="W4m-Ck-c7b"/>
                                     <constraint firstItem="nIK-na-w4D" firstAttribute="width" secondItem="yhU-LU-mMM" secondAttribute="width" multiplier="0.95" id="XXC-u6-628"/>
                                     <constraint firstItem="nIK-na-w4D" firstAttribute="top" secondItem="wSV-F0-w18" secondAttribute="bottom" constant="10" id="a64-Jd-BoX"/>
+                                    <constraint firstItem="FF0-4o-O9A" firstAttribute="height" secondItem="wSV-F0-w18" secondAttribute="height" id="b5Y-Mc-nRf"/>
                                     <constraint firstItem="wSV-F0-w18" firstAttribute="leading" secondItem="yhU-LU-mMM" secondAttribute="leading" constant="8" id="bFd-Qe-s03"/>
+                                    <constraint firstItem="FF0-4o-O9A" firstAttribute="width" secondItem="wSV-F0-w18" secondAttribute="width" multiplier="1/2" id="gz2-Hu-Dr4"/>
                                     <constraint firstItem="wSV-F0-w18" firstAttribute="top" secondItem="yhU-LU-mMM" secondAttribute="top" constant="8" id="lgE-a3-6ry"/>
                                     <constraint firstItem="LNT-6Q-gGD" firstAttribute="trailing" secondItem="nIK-na-w4D" secondAttribute="trailing" id="lh4-eC-neh"/>
                                     <constraint firstItem="U3Z-VN-o0i" firstAttribute="leading" secondItem="yhU-LU-mMM" secondAttribute="leading" id="unf-kg-eRa"/>
@@ -82,13 +87,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.40008503401360546" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yhU-LU-mMM" firstAttribute="width" secondItem="eKm-CU-b3r" secondAttribute="width" multiplier="9/10" id="2XQ-xC-qFo"/>
-                            <constraint firstItem="yhU-LU-mMM" firstAttribute="height" secondItem="eKm-CU-b3r" secondAttribute="height" multiplier="1/5" id="3ml-A7-Pvi"/>
+                            <constraint firstItem="yhU-LU-mMM" firstAttribute="height" secondItem="eKm-CU-b3r" secondAttribute="height" multiplier="2/6" id="3ml-A7-Pvi"/>
                             <constraint firstItem="yhU-LU-mMM" firstAttribute="centerX" secondItem="eKm-CU-b3r" secondAttribute="centerX" id="8Fg-v8-rqX"/>
                             <constraint firstItem="yhU-LU-mMM" firstAttribute="top" secondItem="A7E-QR-6x1" secondAttribute="top" constant="10" id="qto-mn-eWE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="LNT-6Q-gGD" id="rYI-xA-beY"/>
+                        <outlet property="imageView" destination="U3Z-VN-o0i" id="rrv-PX-YNs"/>
                         <outlet property="saveButton" destination="yCI-m8-Y3k" id="TEq-hj-DPA"/>
                         <outlet property="titleLabel" destination="wSV-F0-w18" id="L0f-YG-iea"/>
                         <outlet property="tripTextField" destination="nIK-na-w4D" id="atB-Bb-J8t"/>
@@ -99,8 +105,12 @@
             <point key="canvasLocation" x="892.75362318840587" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Tint"/>
     <resources>
         <image name="camera" catalog="system" width="128" height="94"/>
+        <namedColor name="Tint">
+            <color red="1" green="0.24300000071525574" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

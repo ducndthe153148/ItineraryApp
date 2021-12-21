@@ -36,6 +36,9 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87w-LG-6dc">
                                                     <rect key="frame" x="30" y="16" width="354" height="128"/>
                                                     <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Esb-pv-CHk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="128"/>
+                                                        </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Road to italy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELi-c0-0Xe">
                                                             <rect key="frame" x="49.5" y="34.5" width="255.5" height="59"/>
                                                             <fontDescription key="fontDescription" name="FugazOne-Regular" family="Fugaz One" pointSize="40"/>
@@ -45,8 +48,12 @@
                                                     </subviews>
                                                     <color key="backgroundColor" name="Accent"/>
                                                     <constraints>
+                                                        <constraint firstItem="Esb-pv-CHk" firstAttribute="width" secondItem="87w-LG-6dc" secondAttribute="width" id="2ng-v9-ryM"/>
                                                         <constraint firstItem="ELi-c0-0Xe" firstAttribute="centerY" secondItem="87w-LG-6dc" secondAttribute="centerY" id="CWL-Vt-Pib"/>
                                                         <constraint firstItem="ELi-c0-0Xe" firstAttribute="centerX" secondItem="87w-LG-6dc" secondAttribute="centerX" id="OcC-Qz-KFJ"/>
+                                                        <constraint firstItem="Esb-pv-CHk" firstAttribute="top" secondItem="87w-LG-6dc" secondAttribute="top" id="U6C-P6-qEj"/>
+                                                        <constraint firstItem="Esb-pv-CHk" firstAttribute="leading" secondItem="87w-LG-6dc" secondAttribute="leading" id="cgq-xl-R00"/>
+                                                        <constraint firstItem="Esb-pv-CHk" firstAttribute="height" secondItem="87w-LG-6dc" secondAttribute="height" id="xMx-w3-7Ec"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -60,6 +67,7 @@
                                         <connections>
                                             <outlet property="cardView" destination="87w-LG-6dc" id="CwI-fA-x5H"/>
                                             <outlet property="titleLabel" destination="ELi-c0-0Xe" id="OfW-Sa-CmG"/>
+                                            <outlet property="tripImage" destination="Esb-pv-CHk" id="wSd-tG-aT9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -11,18 +11,19 @@ class TripTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var tripImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // happen first when cell created
         
         cardView.addShadowAndRoundedCorner()
-        
+        tripImage.layer.cornerRadius = cardView.layer.cornerRadius
         
     }
 
     func setUp (tripModel: TripModel) {
         titleLabel.text = tripModel.title
-        
+        tripImage.image = tripModel.image
     }
 }
