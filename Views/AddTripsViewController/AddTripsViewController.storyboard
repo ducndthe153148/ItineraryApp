@@ -19,6 +19,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yhU-LU-mMM" customClass="PopupUIView" customModule="ItineraryApp" customModuleProvider="target">
                                 <rect key="frame" x="20.5" y="54" width="373" height="179"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U3Z-VN-o0i">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="179"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSV-F0-w18">
                                         <rect key="frame" x="8" y="8" width="61" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -46,18 +49,31 @@
                                             <action selector="cancel:" destination="dni-m2-VIu" eventType="touchUpInside" id="DxE-ii-y2d"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FF0-4o-O9A">
+                                        <rect key="frame" x="344" y="5" width="24" height="14"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="camera" catalog="system"/>
+                                        </buttonConfiguration>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="FF0-4o-O9A" firstAttribute="top" secondItem="yhU-LU-mMM" secondAttribute="top" constant="5" id="4aV-NU-SEP"/>
                                     <constraint firstItem="LNT-6Q-gGD" firstAttribute="bottom" secondItem="yCI-m8-Y3k" secondAttribute="bottom" id="7ij-R9-Tfb"/>
                                     <constraint firstItem="nIK-na-w4D" firstAttribute="height" secondItem="yhU-LU-mMM" secondAttribute="height" multiplier="0.2" id="92A-LK-Ih0"/>
                                     <constraint firstAttribute="bottom" secondItem="yCI-m8-Y3k" secondAttribute="bottom" constant="10" id="G3a-Zy-cpr"/>
+                                    <constraint firstItem="U3Z-VN-o0i" firstAttribute="top" secondItem="yhU-LU-mMM" secondAttribute="top" id="Gff-aP-3JH"/>
+                                    <constraint firstAttribute="bottom" secondItem="U3Z-VN-o0i" secondAttribute="bottom" id="JUb-01-aMA"/>
                                     <constraint firstItem="nIK-na-w4D" firstAttribute="centerX" secondItem="yhU-LU-mMM" secondAttribute="centerX" id="LvC-PN-rJ3"/>
+                                    <constraint firstAttribute="trailing" secondItem="FF0-4o-O9A" secondAttribute="trailing" constant="5" id="Vnd-7k-ll5"/>
+                                    <constraint firstAttribute="trailing" secondItem="U3Z-VN-o0i" secondAttribute="trailing" id="W4m-Ck-c7b"/>
                                     <constraint firstItem="nIK-na-w4D" firstAttribute="width" secondItem="yhU-LU-mMM" secondAttribute="width" multiplier="0.95" id="XXC-u6-628"/>
                                     <constraint firstItem="nIK-na-w4D" firstAttribute="top" secondItem="wSV-F0-w18" secondAttribute="bottom" constant="10" id="a64-Jd-BoX"/>
                                     <constraint firstItem="wSV-F0-w18" firstAttribute="leading" secondItem="yhU-LU-mMM" secondAttribute="leading" constant="8" id="bFd-Qe-s03"/>
                                     <constraint firstItem="wSV-F0-w18" firstAttribute="top" secondItem="yhU-LU-mMM" secondAttribute="top" constant="8" id="lgE-a3-6ry"/>
                                     <constraint firstItem="LNT-6Q-gGD" firstAttribute="trailing" secondItem="nIK-na-w4D" secondAttribute="trailing" id="lh4-eC-neh"/>
+                                    <constraint firstItem="U3Z-VN-o0i" firstAttribute="leading" secondItem="yhU-LU-mMM" secondAttribute="leading" id="unf-kg-eRa"/>
                                     <constraint firstItem="yCI-m8-Y3k" firstAttribute="leading" secondItem="nIK-na-w4D" secondAttribute="leading" id="wSQ-hW-AZL"/>
                                 </constraints>
                             </view>
@@ -84,6 +100,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" catalog="system" width="128" height="94"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
