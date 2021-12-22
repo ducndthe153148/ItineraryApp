@@ -12,8 +12,11 @@ class TripsViewController: UIViewController {
     
     @IBOutlet weak var addButton: FloatingActionButton!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var helpView: UIVisualEffectView!
+    
     
     var tripIndexToEdit: Int?
+    var seenHelpView = "seenHelpView"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +24,20 @@ class TripsViewController: UIViewController {
         tableView.delegate = self
         
         // Code sẽ call khi completion handler được call 
-        TripFunction.readTrip(completion: { [weak self] in
+        TripFunction.readTrip(completion: { [unowned self] in
             // Completion
-            self?.tableView.reloadData()
+            self.tableView.reloadData()
+            
+            if Data.tripModels.count > 0 {
+                if UserDefaults.standard.bool(forKey: self.seenHelpView) == false {
+                    self.view.addSubview(self.helpView)
+                    self.helpView.frame = self.view.frame
+                }
+            }
+            
         })
+        
+        
         
         view.backgroundColor = Theme.background
         
@@ -42,6 +55,18 @@ class TripsViewController: UIViewController {
             tripIndexToEdit = nil
         }
     }
+    
+    @IBAction func closeHelpView(_ sender: AppUIButton) {
+        
+        UIView.animate(withDuration: 0.5) {
+            self.helpView.alpha = 0
+        } completion: { success in
+            self.helpView.removeFromSuperview()
+            UserDefaults.standard.set(true, forKey: self.seenHelpView)
+        }
+        
+    }
+    
 }
 extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

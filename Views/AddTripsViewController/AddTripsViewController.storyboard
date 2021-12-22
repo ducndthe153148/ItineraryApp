@@ -20,7 +20,7 @@
                                 <rect key="frame" x="20.5" y="54" width="373" height="298.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U3Z-VN-o0i">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="298"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="298.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSV-F0-w18">
                                         <rect key="frame" x="8" y="8" width="61" height="21"/>
