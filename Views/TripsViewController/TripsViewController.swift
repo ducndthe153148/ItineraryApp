@@ -25,6 +25,7 @@ class TripsViewController: UIViewController {
         })
         
         view.backgroundColor = Theme.background
+        
         //addButton.createFloatingActionButton()
     }
     
@@ -52,5 +53,31 @@ extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let trip = Data.tripModels[indexPath.row]
+        
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { (contextualAction, view, actionPerform: @escaping (Bool) -> ()) in
+            let alert = UIAlertController(title: "Delete Trip", message: "Do you want to delete this trip \(trip.title)"
+                                          , preferredStyle: .alert)
+            
+            // Each action contain each button, cancel button and delete button 
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { alertAction in
+                actionPerform(false)
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { alertAction in
+                // perform delete
+                TripFunction.deleteTrip(index: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
+                actionPerform(true)
+            }))
+            
+            self.present(alert, animated: true)
+        }
+        delete.image = UIImage.init(named: "DeleteIcon")
+        return UISwipeActionsConfiguration(actions: [delete])
     }
 }

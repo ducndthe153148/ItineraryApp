@@ -70,10 +70,10 @@ class AddTripsViewController: UIViewController {
     }
     
     fileprivate func extractedFunc() {
-        let myPickerController = UIImagePickerController()
-        myPickerController.delegate = self
-        myPickerController.sourceType = .photoLibrary
         DispatchQueue.main.async {
+            let myPickerController = UIImagePickerController()
+            myPickerController.delegate = self
+            myPickerController.sourceType = .photoLibrary
             self.present(myPickerController, animated: true)
         }
     }

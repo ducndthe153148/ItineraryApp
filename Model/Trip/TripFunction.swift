@@ -37,7 +37,7 @@ class TripFunction {
         
     }
     
-    static func deleteTrip(tripModel: TripModel){
-        
+    static func deleteTrip(index: Int){
+        Data.tripModels.remove(at: index)
     }
 }
