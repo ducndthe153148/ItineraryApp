@@ -17,6 +17,7 @@ class AddTripsViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var doneSaving: (() -> ())?
+    var tripIndexToEdit: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,13 @@ class AddTripsViewController: UIViewController {
         titleLabel.layer.shadowColor = UIColor.white.cgColor
         titleLabel.layer.shadowOffset = CGSize.zero
         titleLabel.layer.shadowRadius = 5
+        
+        if let index = tripIndexToEdit {
+            let trip = Data.tripModels[index]
+            tripTextField.text = trip.title
+            imageView.image = trip.image
+            titleLabel.text = "Edit Trip"
+        }
     }
 
     
@@ -61,7 +69,11 @@ class AddTripsViewController: UIViewController {
             return
         }
         
-        TripFunction.createTrip(tripModel: TripModel(title: newTripName, image: imageView.image))
+        if let index = tripIndexToEdit {
+            TripFunction.updateTrip(at: index, title: newTripName, image: imageView.image)
+        } else {
+            TripFunction.createTrip(tripModel: TripModel(title: newTripName, image: imageView.image))
+        }
         
         if let doneSaving = doneSaving {
             doneSaving()

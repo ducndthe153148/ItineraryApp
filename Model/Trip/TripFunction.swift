@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class TripFunction {
     static func createTrip(tripModel: TripModel) {
@@ -33,8 +34,9 @@ class TripFunction {
         
     }
     
-    static func updateTrip(tripModel: TripModel){
-        
+    static func updateTrip(at index: Int, title: String, image: UIImage? = nil){
+        Data.tripModels[index].title = title
+        Data.tripModels[index].image = image
     }
     
     static func deleteTrip(index: Int){
